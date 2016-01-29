@@ -1,9 +1,9 @@
-package cannata;
+package kothari.customer;
 
 public class CustomerApp {
 
     public static void main(String[] args) {
-        System.out.println("Hello, World");
-    }
 
+        System.out.print(CustomerDB.getCustomer(1002));
+    }
 }
