@@ -3,6 +3,11 @@
  */
 public class Customer {
 
+    public static void main(String[] args) {
+        String test = "Hello World!";
+        System.out.println(test);
+    }
+
     // setting instance variables
     private String full_name;
     private String address;
@@ -62,9 +67,15 @@ public class Customer {
     }
 
     // getNameAndAddress
-    // returns the name and address
+    public void printToConsole() {
+        System.out.println(
+                full_name + '\n' +
+                        address + '\n' +
+                        city + ', ' + state + ' ' + postalCode
+                        +
+        );
+    }
 
 
 
 }
-
