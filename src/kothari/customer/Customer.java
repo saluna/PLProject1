@@ -9,24 +9,24 @@ public class Customer {
         System.out.println(test);
     }
 
-        // setting instance variables
-        private String full_name;
-        private String address;
-        private String city;
-        private String state;
-        private String postalCode;
+    // setting instance variables
+    private String full_name;
+    private String address;
+    private String city;
+    private String state;
+    private String postalCode;
 
-        // the constructor
-        public Customer() {
-            full_name = "";
-            address = "";
-            city = "";
-            state = "";
-            postalCode = "";
-        }
+    // the constructor
+    public Customer() {
+        full_name = "";
+        address = "";
+        city = "";
+        state = "";
+        postalCode = "";
+    }
 
-        // get and set methods to provide access
-        // to all instance variables
+    // get and set methods to provide access
+    // to all instance variables
 
     public void setfull_name(String full_name) {
         this.full_name = full_name;
