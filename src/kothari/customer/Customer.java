@@ -19,7 +19,47 @@ public class Customer {
         postalCode = "";
     }
 
-    // get and set methods to provide access to all instance variables
+    // get and set methods to provide access
+    // to all instance variables
+    public void setfull_name(String full_name) {
+        this.full_name = full_name;
+    }
+
+    public String getfull_name() {
+        return full_name;
+    }
+
+    public void setaddress(String address) {
+        this.address = address;
+    }
+
+    public String getaddress() {
+        return address;
+    }
+
+    public void setcity(String city) {
+        this.city = city;
+    }
+
+    public String getcity() {
+        return city;
+    }
+
+    public void setstate(String state) {
+        this.state = state;
+    }
+
+    public String getstate() {
+        return state;
+    }
+
+    public void setpostalCode(String postalCode) {
+        this.postalCode = postalCode;
+    }
+
+    public String getpostalCode() {
+        return postalCode;
+    }
 
     // getNameAndAddress
     // returns the name and address
@@ -27,3 +67,4 @@ public class Customer {
 
 
 }
+
