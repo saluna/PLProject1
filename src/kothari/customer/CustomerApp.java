@@ -26,6 +26,7 @@ public class CustomerApp {
             // get input from user
             System.out.println("Enter a customer number");
 
+<<<<<<< HEAD
             // get Customer information
             Customer customer = CustomerDB.getcustNum(custNum);
 
@@ -44,6 +45,9 @@ public class CustomerApp {
         }
 
         System.out.println("Goodbye!");
+=======
+        System.out.print(CustomerDB.getCustomer(5000));
+>>>>>>> master
     }
 
 }

@@ -1,6 +1,7 @@
 /**
  * Created by avnikothari on 1/28/16.
  */
+package kothari.customer;
 public class Customer {
 
     public static void main(String[] args) {
@@ -26,6 +27,7 @@ public class Customer {
 
     // get and set methods to provide access
     // to all instance variables
+
     public void setfull_name(String full_name) {
         this.full_name = full_name;
     }
@@ -71,11 +73,9 @@ public class Customer {
         System.out.println(
                 full_name + '\n' +
                         address + '\n' +
-                        city + ', ' + state + ' ' + postalCode
-                        +
+                        city + ' ' + state + ' ' + postalCode
         );
     }
-
-
-
 }
+
+
