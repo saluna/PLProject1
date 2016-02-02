@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 package kothari.customer;
 
+=======
+/**
+ * Created by avnikothari on 1/28/16.
+ */
+package kothari.customer;
+>>>>>>> master
 public class Customer {
 
     public static void main(String[] args) {
@@ -25,6 +32,7 @@ public class Customer {
 
     // get and set methods to provide access
     // to all instance variables
+<<<<<<< HEAD
     public void setcustNum(String custNum) {
         this.custNum = custNum;
     }
@@ -32,6 +40,8 @@ public class Customer {
     public String getcustNum() {
         return custNum;
     }
+=======
+>>>>>>> master
 
     public void setfull_name(String full_name) {
         this.full_name = full_name;
@@ -78,10 +88,13 @@ public class Customer {
         return(
                 full_name + '\n' +
                         address + '\n' +
+<<<<<<< HEAD
                         city + ", " + state + ' ' + postalCode
+=======
+                        city + ' ' + state + ' ' + postalCode
+>>>>>>> master
         );
     }
-
-
-
 }
+
+
