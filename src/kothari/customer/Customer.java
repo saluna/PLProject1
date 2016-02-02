@@ -1,11 +1,8 @@
-/**
- * Created by avnikothari on 1/28/16.
- */
+package kothari.customer;
+
 public class Customer {
 
     public static void main(String[] args) {
-        String test = "Hello World!";
-        System.out.println(test);
     }
 
     // setting instance variables
@@ -14,9 +11,11 @@ public class Customer {
     private String city;
     private String state;
     private String postalCode;
+    private String custNum;
 
     // the constructor
     public Customer() {
+        custNum = "";
         full_name = "";
         address = "";
         city = "";
@@ -26,6 +25,14 @@ public class Customer {
 
     // get and set methods to provide access
     // to all instance variables
+    public void setcustNum(String custNum) {
+        this.custNum = custNum;
+    }
+
+    public String getcustNum() {
+        return custNum;
+    }
+
     public void setfull_name(String full_name) {
         this.full_name = full_name;
     }
@@ -67,12 +74,11 @@ public class Customer {
     }
 
     // getNameAndAddress
-    public void printToConsole() {
-        System.out.println(
+    public String getNameAndAddress() {
+        return(
                 full_name + '\n' +
                         address + '\n' +
-                        city + ', ' + state + ' ' + postalCode
-                        +
+                        city + ", " + state + ' ' + postalCode
         );
     }
 
