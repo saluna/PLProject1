@@ -4,16 +4,6 @@ import java.util.Scanner;
 
 public class CustomerApp {
 
-//	private static Scanner sc = new Scanner(System.in);
-//	public static String message;
-//
-//	public static String getString(String prompt) {
-//		System.out.println(prompt);
-//		String s = sc.nextLine();
-//		return s;
-//	}
-
-
     public static void main(String[] args) {
         // display a welcome message
         System.out.println("Welcome to the Customer Viewer");
@@ -27,7 +17,6 @@ public class CustomerApp {
             System.out.println("Enter a customer number:");
             String custNum = sc.nextLine();
 
-<<<<<<< HEAD
             // get Customer information
             Customer customer = CustomerDB.getcustNum(custNum);
 
@@ -52,9 +41,6 @@ public class CustomerApp {
         }
 
         System.out.println("Goodbye!");
-=======
-        System.out.print(CustomerDB.getCustomer(5000));
->>>>>>> master
     }
 
 }
