@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class CustomerApp {
 
-    private static Scanner sc = new Scanner(System.in);
-    public static String message;
-
-    public static String getString(String prompt) {
-        System.out.println(prompt);
-        String s = sc.nextLine();
-        return s;
-    }
+//	private static Scanner sc = new Scanner(System.in);
+//	public static String message;
+//
+//	public static String getString(String prompt) {
+//		System.out.println(prompt);
+//		String s = sc.nextLine();
+//		return s;
+//	}
 
 
     public static void main(String[] args) {
@@ -24,7 +24,8 @@ public class CustomerApp {
         String choice = "y";
         while (choice.equalsIgnoreCase("y")) {
             // get input from user
-            System.out.println("Enter a customer number");
+            System.out.println("Enter a customer number:");
+            String custNum = sc.nextLine();
 
 <<<<<<< HEAD
             // get Customer information
@@ -33,9 +34,15 @@ public class CustomerApp {
             // display the output
             String message = customer.getfull_name() + "\n" +
                     customer.getaddress() + "\n" +
-                    customer.getcity() + "," + customer.getstate() + " " +
+                    customer.getcity() + ", " + customer.getstate() + " " +
                     customer.getpostalCode();
-            System.out.println(message);
+            String error_message = "There is no customer number " + custNum + " in our records.";
+
+            if (customer.getfull_name().equalsIgnoreCase("Unknown")) {
+                System.out.println(error_message);
+            } else {
+                System.out.println(message);
+            }
 
             // see if the user wants to continue
             System.out.print("Display another customer? (y/n): ");
